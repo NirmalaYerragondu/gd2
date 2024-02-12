@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txt{
+            width: 300px;
+            height: 300px;
+        }
+        div{
+            width:1000px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <textarea value="Enter comments here" id="txt"></textarea>
+    <br>
+    <button type="button" id="b" onclick="display()">submit</button>
+    <div id="d" border="2px" margin="20px"></div>
+    
+    <script>
+        function display(){
+            let x=document.getElementById('txt').value;
+            document.getElementById('d').innerHTML=x;
+        }
+    </script>
+</body>
+</html>
